@@ -1,37 +1,35 @@
 export default defineNuxtConfig({
-  devtools: { enabled: false },
+  devtools: {
+    enabled: true
+  },
 
-  css: ['~/assets/css/main.css'],
+  css: [
+    '~/assets/css/main.css'
+  ],
 
   app: {
-    baseURL: '/pangasinan-heritage/',
-    head: {
-      htmlAttrs: { lang: 'en' },
+    baseURL: '/pangasinan-heritage/'
+  },
 
-      meta: [
-        {
-          name: 'theme-color',
-          content: '#174a44'
-        },
-        {
-          name: 'description',
-          content:
-            'Pangasinan Heritage Digital Showcase — a fast, accessible guide to cultural and natural heritage sites.'
-        }
+  nitro: {
+    preset: 'github-pages',
+
+    prerender: {
+      routes: [
+        '/',
+        '/about',
+        '/discoveries',
+
+        '/discoveries/sky-plaza',
+        '/discoveries/maranum-falls',
+        '/discoveries/malico-viewpoint-inn',
+        '/discoveries/heritage-trails',
+        '/discoveries/river-stories',
+        '/discoveries/highland-cuisine'
       ]
     }
   },
 
-  compatibilityDate: '2025-04-01',
-
-  nitro: {
-    preset: 'github-pages'
-  },
-
-  routeRules: {
-    '/': { prerender: true },
-    '/discoveries': { prerender: true },
-    '/about': { prerender: true },
-    '/components': { prerender: true }
-  }
+  compatibilityDate: '2024-04-03'
 })
+
