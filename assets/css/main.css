@@ -4,3 +4,17 @@
 @media (max-width:760px){.menu-toggle{display:block}.primary-nav{position:absolute;left:16px;right:16px;top:66px;display:none;flex-direction:column;align-items:stretch;background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px;box-shadow:var(--shadow)}.primary-nav.is-open{display:flex}.primary-nav .btn{width:100%}.hero{min-height:535px}.hero__content{padding:70px 0}.section{padding:55px 0}.footer-grid{flex-direction:column}.feature-list>div{grid-template-columns:1fr}.heritage-grid{grid-template-columns:1fr}.heritage-card p{min-height:0}.page-intro{padding:60px 0}.narrative-grid{grid-template-columns:1fr}}
 @media (max-width:480px){:root{--container:calc(100% - 24px)}.brand small{display:none}.hero__lede{font-size:.95rem}.hero__actions{align-items:stretch}.hero__actions .btn,.hero__text-link{width:100%;text-align:center}.hero__text-link{padding:9px 0}.section-heading{align-items:flex-start;flex-direction:column}.search-form__row{flex-direction:column}.search-form__row .btn{width:100%}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.heritage-card__art {
+  aspect-ratio: 16 / 10;
+  position: relative;
+  overflow: hidden;
+  background: #dfe5df;
+}
+
+.heritage-card__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
