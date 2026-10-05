@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import type { HeritageSite } from '~/data/heritage'
 
-defineProps<{ site: HeritageSite; featured?: boolean }>()
+defineProps<{
+  site: HeritageSite
+  featured?: boolean
+}>()
 </script>
 
 <template>
@@ -9,6 +12,7 @@ defineProps<{ site: HeritageSite; featured?: boolean }>()
     class="heritage-card"
     :class="`heritage-card--${site.accent}`"
   >
+    <!-- Image -->
     <div class="heritage-card__art">
       <img
         :src="site.image"
@@ -17,24 +21,38 @@ defineProps<{ site: HeritageSite; featured?: boolean }>()
       />
     </div>
 
+    <!-- Content -->
     <div class="heritage-card__body">
+
       <div class="meta-row">
-        <span class="badge">{{ site.category }}</span>
-        <span>{{ site.location }}</span>
+        <span class="badge">
+          {{ site.category }}
+        </span>
+
+        <span>
+          {{ site.location }}
+        </span>
       </div>
 
-      <h3>{{ site.name }}</h3>
+      <h3>
+        {{ site.name }}
+      </h3>
 
-      <p>{{ site.shortDescription }}</p>
+      <p>
+        {{ site.shortDescription }}
+      </p>
 
+      <!-- Go to detail page -->
       <NuxtLink
         class="text-link"
-        :to="`/discoveries#${site.slug}`"
+        :to="`/discoveries/${site.slug}`"
         :aria-label="`Explore ${site.name}`"
       >
         Explore site
         <span aria-hidden="true">→</span>
       </NuxtLink>
+
     </div>
   </article>
 </template>
+

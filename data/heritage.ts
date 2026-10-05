@@ -20,7 +20,7 @@ export const heritageSites: HeritageSite[] = [
       'A highland stop for wide mountain views, cool air, and slow travel moments.',
     accent: 'sky',
     icon: 'mountain',
-    image: '/images/sky-plaza.jpg',
+    image: '/pangasinan-heritage/images/sky-plaza.jpg',
     tags: ['nature', 'viewpoint', 'highland']
   },
 
@@ -33,7 +33,7 @@ export const heritageSites: HeritageSite[] = [
       'A refreshing forest destination highlighted for its water, rock formations, and greenery.',
     accent: 'water',
     icon: 'waterfall',
-    image: '/images/maranum-falls.jpg',
+    image: '/pangasinan-heritage/images/maranum-falls.jpg',
     tags: ['nature', 'waterfall', 'eco-tourism']
   },
 
@@ -46,7 +46,7 @@ export const heritageSites: HeritageSite[] = [
       'A scenic mountain stop connecting visitors with highland stories and local hospitality.',
     accent: 'forest',
     icon: 'cabins',
-    image: '/images/malico-viewpoint-inn.jpg',
+    image: '/pangasinan-heritage/images/malico-viewpoint-inn.jpg',
     tags: ['heritage', 'mountain', 'community']
   },
 
@@ -59,7 +59,7 @@ export const heritageSites: HeritageSite[] = [
       'A sample collection of routes linking local history, food traditions, craft, and landscapes.',
     accent: 'earth',
     icon: 'path',
-    image: '/images/heritage-trails.jpg',
+    image: '/pangasinan-heritage/images/heritage-trails.jpg',
     tags: ['culture', 'history', 'local-life']
   },
 
@@ -72,7 +72,7 @@ export const heritageSites: HeritageSite[] = [
       'Stories and places shaped by waterways, livelihoods, and generations of local knowledge.',
     accent: 'river',
     icon: 'river',
-    image: '/images/river-stories.jpg',
+    image: '/pangasinan-heritage/images/river-stories.jpg',
     tags: ['community', 'stories', 'nature']
   },
 
@@ -85,7 +85,7 @@ export const heritageSites: HeritageSite[] = [
       'A sample editorial guide to food traditions and ingredients rooted in upland communities.',
     accent: 'sun',
     icon: 'basket',
-    image: '/images/highland-cuisine.jpg',
+    image: '/pangasinan-heritage/images/highland-cuisine.jpg',
     tags: ['food', 'culture', 'community']
   }
 ]
