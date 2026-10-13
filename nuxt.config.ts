@@ -19,17 +19,10 @@ export default defineNuxtConfig({
         '/',
         '/about',
         '/discoveries',
-
-        '/discoveries/sky-plaza',
-        '/discoveries/maranum-falls',
-        '/discoveries/malico-viewpoint-inn',
-        '/discoveries/heritage-trails',
-        '/discoveries/river-stories',
-        '/discoveries/highland-cuisine'
+        '/discoveries/sky-plaza'
       ]
     }
   },
 
   compatibilityDate: '2024-04-03'
 })
-

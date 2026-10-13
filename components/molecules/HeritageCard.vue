@@ -1,10 +1,19 @@
 <script setup lang="ts">
 import type { HeritageSite } from '~/data/heritage'
 
-defineProps<{
+const props = defineProps<{
   site: HeritageSite
   featured?: boolean
 }>()
+
+const detailLinks: Record<string, string> = {
+  'sky-plaza': '/discoveries/sky-plaza',
+  'maranum-falls': '/discoveries/maranum-falls',
+  'malico-viewpoint-inn': '/discoveries/malico-viewpoint-inn',
+  'heritage-trails': '/discoveries/heritage-trails',
+  'river-stories': '/discoveries/river-stories',
+  'highland-cuisine': '/discoveries/highland-cuisine'
+}
 </script>
 
 <template>
@@ -12,6 +21,7 @@ defineProps<{
     class="heritage-card"
     :class="`heritage-card--${site.accent}`"
   >
+
     <!-- Image -->
     <div class="heritage-card__art">
       <img
@@ -42,17 +52,16 @@ defineProps<{
         {{ site.shortDescription }}
       </p>
 
-      <!-- Go to detail page -->
+      <!-- Explore Button -->
       <NuxtLink
         class="text-link"
-        :to="`/discoveries/${site.slug}`"
-        :aria-label="`Explore ${site.name}`"
+        :to="detailLinks[site.slug]"
       >
         Explore site
         <span aria-hidden="true">→</span>
       </NuxtLink>
 
     </div>
+
   </article>
 </template>
-
