@@ -27,7 +27,7 @@ export const heritageSites: HeritageSite[] = [
     accent: 'sky',
     icon: 'mountain',
     tags: ['nature', 'viewpoint', 'highland'],
-    image: '/images/sky-plaza.jpg'
+    image: '/pangasinan-heritage/images/sky-plaza.jpg'
   },
 
   {
@@ -45,7 +45,7 @@ export const heritageSites: HeritageSite[] = [
     accent: 'water',
     icon: 'waterfall',
     tags: ['nature', 'waterfall', 'eco-tourism'],
-    image: '/images/maranum-falls.jpg'
+    image: '/pangasinan-heritage/images/maranum-falls.jpg'
   },
 
   {
@@ -63,7 +63,7 @@ export const heritageSites: HeritageSite[] = [
     accent: 'forest',
     icon: 'cabins',
     tags: ['heritage', 'mountain', 'community'],
-    image: '/images/malico-viewpoint-inn.jpg'
+    image: '/pangasinan-heritage/images/malico-viewpoint-inn.jpg'
   },
 
   {
@@ -81,7 +81,7 @@ export const heritageSites: HeritageSite[] = [
     accent: 'earth',
     icon: 'path',
     tags: ['culture', 'history', 'local-life'],
-    image: '/images/heritage-trails.jpg'
+    image: '/pangasinan-heritage/images/heritage-trails.jpg'
   },
 
   {
@@ -99,7 +99,7 @@ export const heritageSites: HeritageSite[] = [
     accent: 'river',
     icon: 'river',
     tags: ['community', 'stories', 'nature'],
-    image: '/images/river-stories.jpg'
+    image: '/pangasinan-heritage/images/river-stories.jpg'
   },
 
   {
@@ -117,6 +117,6 @@ export const heritageSites: HeritageSite[] = [
     accent: 'sun',
     icon: 'basket',
     tags: ['food', 'culture', 'community'],
-    image: '/images/highland-cuisine.jpg'
+    image: '/pangasinan-heritage/images/highland-cuisine.jpg'
   }
 ]
